@@ -12,11 +12,13 @@ b. In ra cân nặng lý tưởng, cân nặng tối đa, cân nặng tối thi�
 */
 
 
-let height = 160;
-let x = height - 100;
-console.log("Cân nặng lý tưởng của tôi là: ", x*9/10 + "  Cân nặng tối đa là: ", x + "  Cân nặng tối thiểu là: ", x*8/10);
+let height = 160; 
 
-// cách 2
-let max = x*9/10;
-let min = x*8/10;
-console.log("Cân nặng lý tưởng của tôi là: ", max + "  Cân nặng tối đa là: ", x + "  Cân nặng tối thiểu là: ", min);
+let canNangLyTuong = (height % 100) * 9 / 10;
+
+let canNangToiDa = height % 100;
+
+let canNangToiThieu = (height % 100) * 8 / 10;
+
+console.log("Cân nặng lý tưởng: ", canNangLyTuong + "  Cân nặng tối đa: ", canNangToiDa + "  Cân nặng tối thiểu: ", canNangToiThieu);
+
