@@ -7,3 +7,8 @@
 const myName = "Alex";
 //myName = "Nagi"; // sai do hằng số thì không thay đổi
 console.log(myName);
+
+
+//cách 2:
+myName = "Alex"; 
+console.log(myName);
