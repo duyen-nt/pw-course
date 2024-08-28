@@ -57,7 +57,14 @@ console.log("Điểm môn Toán của" , student.name + " là:", student['grades
 4. Tạo một object product với các thuộc tính là tên các sản phẩm và giá trị là giá
 của chúng. Dùng vòng lặp for...in để in ra tên và giá của mỗi sản phẩm.
 */
-
+let product = {
+    laptop: 20000000,
+    iphone: 30000000,
+    appleWatch: 8000000
+};
+for (let name in product) {
+    console.log(name);
+}
 /*
 5. Tạo một object settings để quản lý cài đặt của ứng dụng với các thuộc tính như
 volume, brightness. Thay đổi volume và in ra object mới.
@@ -84,3 +91,31 @@ bike["color"] = "Đỏ";
 bike['color'] = "Đen";
 
 console.log(bike.color); 
+
+/*
+7. Tạo một object employee với các thuộc tính: name, age và xóa thuộc tính age khỏi
+object này
+*/
+let employee = {
+    name: "Duyên",
+    age: 28
+};
+delete employee.age;
+console.log(employee);
+
+/*
+8. Một trường học có các lớp học và học sinh như sau:
+○ classA: An, Bình, Châu
+○ classB: Đào, Hương, Giang
+Hãy viết code để đáp ứng yêu cầu sau:
+- Khai báo tên biến: school
+- Tên class là tên thuộc tính, giá trị của các thuộc tính này là một mảng chứa
+tên các học sinh
+Vd:
+const school = { classA: ["Giang"]...}
+*/
+
+let  school = { 
+    classA: ["An", "Bình", "Châu"], 
+    classB: ["Đào", "Hương", "Giang"]
+};
