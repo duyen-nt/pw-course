@@ -1,0 +1,68 @@
+GIT:
+Các câu lệnh thường dùng:
+Câu lệnh                               Mô tả:
+git log                                Xem lịch sử commit
+git commit --amend:                    Thay đổi commit message mới nhất
+- Gõ i -> vào chế độ insert
+- Gõ esc để thoát insert
+- Gõ “:wq” -> write and quit
+git commit --amend -m”message”
+git restore --staged <file>            Đưa 1 file từ vùng staging về working directory
+git restore --staged <file1> <file2>   Đưa nhiều file từ vùng staging về working directory
+git reset HEAD~1 (undo 1 commit)       Đưa file từ vùng repository về working directory (uncommit)
+
+git branch <ten_branch>                Tạo branch
+git checkout <ten_branch>              Switch sang branch có name = ten_branch
+git checkout -b <ten_branch>           Vừa tạo mới branch có name = ten_branch vừa Switch sang branch này luôn
+Ignore file                            Không kiểm tra file có tên <file_name> bên trong Ignore
+<file_name>
+Ignore folder                          Không kiểm tra toàn bộ thư mục <folder_name> (all file bên trong thư mục này)                     
+<folder_name>/
+
+Javascript"
+
+kebab-case: tên file, ví dụ lession-1
+camelCase: tên biến, ví dụ vietNam
+PascalCase: tên class, ví dụ: HocSinh
+
+
+console.log(‘Toi la Nga’);
+console.log(“Toi la Phong”);
+console.log(`${variable_name}`)
+let name = “Nga”;
+console.log(`Toi la ${name}`);
+console.log(“Toi ten la” + name + “”)
+
+
+Object:
+Khai báo: let/const <ten_object> = { 
+    <thuoc_tinh>: <gia_tri>
+    ...
+}
+Trong đó:
+- <thuoc_tinh>: giống quy tắc đặt tên biến
+- <gia tri>: có kiểu giống biến, hoặc là 1 object khác.
+
+Ex:
+let user = {
+    name: "Duyên",
+    age: 28,
+    address: {
+        city: "TH",
+        ward: "QX"
+    }
+};
+
+Sử dụng:
+- console.log("name = " + user.name);
+- console.log("city = " + user.address.city);
+- console.log(ward = “, user.address["ward"]);
+
+Gán lại
+- user.age = 30;
+- user[“city”][“district”] = "QK";
+
+
+&& : cả 2 vế của mệnh đề đều đúng
+|| : một trong 2 vế đúng
+! : đảo ngược lại giá trị của mệnh đề
