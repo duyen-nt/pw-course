@@ -32,14 +32,22 @@ thì vị trí cần in ra đầu tiên là 2 và vị trí cuối cùng cần i
 
 let numbers = [1, 2, 3, 4, 3, 55, 23];
 let index = 0;
+let flag = false;
 for (let i of numbers) {
-    if (i === 3) {
+    if (i === 30) {
         console.log(index);
+        flag = true;
     }
     index++;
+
     //     console.log(number[0]);
     // }
 }
+if(!flag) {
+    console.log("Ex2: Giá trị cần tìm không tồn tại")
+}
+
+
 
 /*
 3. Tạo mảng chứa các kí tự nghịch đảo từ một chuỗi đã cho. Ví dụ với chuỗi
@@ -54,9 +62,29 @@ for (let i = 0; i < input.length; i++) {
 }
 console.log(output);
 
+
 /*
 4. Lọc ra tất cả các phần tử duy nhất trong một mảng. Ví dụ với mảng [1, 2, 3,
 1, 2, 4,5] thì các phần tử duy nhất (xuất hiện 1 lần) là: [3, 4, 5]
 */
 
 let arr4 = [1, 2, 3, 1, 2, 4, 5];
+
+let resultArr4 = [];
+let i = 0;
+for(let value of arr4) {
+    let isDuplicate = false;
+    let j = 0;
+    for(let valueCheck of arr4) {
+        if(valueCheck === value && i !== j) {
+            isDuplicate = true;
+            break;
+        }
+        j++;
+    }
+    if(!isDuplicate) {
+        resultArr4.push(value);
+    }
+    i++
+}
+console.log(resultArr4);
