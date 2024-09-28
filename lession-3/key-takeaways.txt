@@ -2,7 +2,7 @@ GIT:
 Các câu lệnh thường dùng:
 Câu lệnh                               Mô tả:
 git log                                Xem lịch sử commit
-git commit --amend:                    Thay đổi commit message mới nhất
+git commit --amend:                    Vào giao diện thay đổi commit message mới nhất
 - Gõ i -> vào chế độ insert
 - Gõ esc để thoát insert
 - Gõ “:wq” -> write and quit

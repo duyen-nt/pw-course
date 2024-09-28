@@ -14,13 +14,13 @@ Biết:
 function Ex1 (height, weight) {
     let bmi = (weight / (height*height));
     if (bmi < 18.5) {
-        console.log ("Thiếu cân");
+        return ("Thiếu cân");
     } else if (bmi >=18.5 && bmi < 25) {
-        console.log ("Bình thường");
+        return ("Bình thường");
     } else if (bmi >=25 && bmi < 30) {
-        console.log ("Thừa cân");
+        return ("Thừa cân");
     } else {
-        console.log ("Béo phì");
+        return ("Béo phì");
     }
 }
 console.log("1. Kết quả Ex1: ");

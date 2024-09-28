@@ -57,7 +57,7 @@ console.log("Điểm môn Toán của" , student.name + " là:", student['grades
 4. Tạo một object product với các thuộc tính là tên các sản phẩm và giá trị là giá
 của chúng. Dùng vòng lặp for...in để in ra tên và giá của mỗi sản phẩm.
 */
-let product = {
+let products = {
     laptop: 20000000,
     iphone: 30000000,
     appleWatch: 8000000

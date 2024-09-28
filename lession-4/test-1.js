@@ -98,17 +98,46 @@ Sau đó, gọi hàm decryptCode với mật mã là K9 Challenge và in kết q
 function decryptCode(code) {
     let decryptedCode = '';
     for (let i = 0; i < code.length; i++) {
-        if (code[i] === ' ') {
+        let char = code[i];
+        if (char === ' ') {
             decryptedCode += ' ';
-        } else if (code[i].toLowerCase() === code[i]) {
-            decryptedCode += code[i].toUpperCase();
+        } else if (char === char.toLowerCase()) {
+            decryptedCode += char.toUpperCase();
         } else {
-            decryptedCode += code[i].toLowerCase();
+            decryptedCode += char.toLowerCase();
         }
     }
     return decryptedCode;
 }
 console.log(decryptCode("K9 Challenge"));
+
+// Cách 2: Sử dụng for of + ghi nhận kq vào 1 mảng sau đó chuyển mảng thành chuỗi bằng method join
+function decryptCode2(code) {
+    let decryptedCode = [];
+    for (let char of code) {
+        if (char === char.toUpperCase()) {
+        decryptedCode.push(char.toLowerCase());
+        } else {
+        decryptedCode.push(char.toUpperCase());
+        }
+    }
+    return decryptedCode.join("");
+}
+console.log(decryptCode2("K9 Challenge"))
+
+// Cách 3: 
+  function decryptCode3(code) {
+    let decryptedCode = '';
+    for (let char of code) {
+      if (char === char.toUpperCase()) {
+        decryptedCode += char.toLowerCase();
+      } else {
+        decryptedCode += char.toUpperCase();
+      }
+    }
+    return decryptedCode;
+  }
+  console.log(decryptCode3("K9 Challenge"));
 
 /* 5. Trở về Trái Đất
 Sau khi khám phá kho báu, bạn cần điều khiển tàu vũ trụ K9 trở về Trái Đất.

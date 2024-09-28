@@ -34,7 +34,7 @@ let numbers = [1, 2, 3, 4, 3, 55, 23];
 let index = 0;
 let flag = false;
 for (let i of numbers) {
-    if (i === 30) {
+    if (i === 3) {
         console.log(index);
         flag = true;
     }

@@ -36,3 +36,17 @@ for ( i = 1; i <= 10; i++ ) {
 in ra tổng doanh thu. Biết cấu trúc object của mảng doanh thu như sau:
 {“month”: 2, “total”: 100}
 */
+const months = [
+    { month: "1", total: 10 },
+    { month: "2", total: 20 },
+    { month: "3", total: 30 },
+    { month: "4", total: 40 },
+    { month: "5", total: 50 },
+    { month: "6", total: 60 },
+    { month: "7", total: 70 },
+    { month: "8", total: 80 },
+    { month: "9", total: 90 },
+    { month: "10", total: 100 },
+    { month: "11", total: 110 },
+    { month: "12", total: 120 },
+  ];
